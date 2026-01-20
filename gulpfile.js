@@ -5,6 +5,7 @@ const cssnano = require("cssnano");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const terser = require('gulp-terser-js');
+const jsImport = require('gulp-js-import');
 
 const src = { 'js': './src/js/*.js', 'css': './src/styles/*.scss' };
 const dest = './assets';
@@ -21,6 +22,7 @@ const css = () => {
 
 const script = () => {
     return gulp.src( src.js )
+        .pipe(jsImport({hideConsole: true}))
         .pipe(terser())
         .pipe(gulp.dest( dest ));
 };

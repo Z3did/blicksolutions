@@ -1,0 +1,207 @@
+@import '../../node_modules/keen-slider/keen-slider.scss';
+
+.bs-pdp--title {
+    margin: 0 0 1rem;
+}
+
+.bs-pdp--availability {
+    color: var(--bs-color-success);
+    font-size: 1.5rem;
+    font-weight: 500;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+
+    &::before {
+        content: '';
+        display: block;
+        width: 1em;
+        height: 1em;
+        border-radius: 50%;
+        background: currentColor;
+    }
+}
+
+.bs-pdp--category {
+    color: var(--bs-ncolor-dark-1);
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 0 0 1.5rem;
+}
+
+.bs-main-product .page-width {
+    overflow: hidden;
+}
+
+.product-form__submit {
+    margin-top: 3.5rem;
+    font-size: 1.6rem;
+    min-height: 5.2rem;
+
+    @media (min-width: 900px) {
+        font-size: 1.8rem;
+    }
+}
+
+.bs-pdp--form {
+    padding: 2.6rem 2rem 2.5rem;
+    border: 1px solid var(--bs-ncolor-mid);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow-lg);
+
+    @media (min-width: 900px) {
+        padding: 1.8rem 2.8rem 2.6rem;
+        width: max(calc( 100% - 100px ), 47.5rem);
+    }
+}
+
+.bs-pdp--form-container {
+    .price-item, .neoric & .price--on-sale .price-item--regular {
+        font-size: 1.8rem;
+        margin-right: 2rem;
+    }
+
+    .price {
+        margin-bottom: 1.5rem;
+    }
+
+    @media (min-width: 900px) {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 5rem;
+    }
+}
+
+.bs-pdp--main {
+    padding: 1rem 0 0;
+
+    @media (min-width: 900px) {
+        display: flex;
+        flex-direction: row;
+        padding: 4.3rem 0 0;
+
+        > div {
+            flex: 1;
+            max-width: 50%;
+        }
+    }
+}
+
+#thumbnails {
+    display: none;
+
+    @media (min-width: 900px) {
+        display: flex;
+        margin-top: 20px;
+        border-radius: .5rem;
+
+        .keen-slider__slide {
+            aspect-ratio: 1 / 1;
+            max-height: none !important;
+            border-radius: .5rem;
+        }
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+#main-gallery {    
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: .5rem;
+    }
+
+    @media (max-width: 899px) {
+        overflow: visible;
+        margin: 0 -.35rem;
+        width: calc( 100% + .7rem );
+
+        .keen-slider__slide {
+            padding: 0 .35rem;
+        }
+    }
+
+    @media (min-width: 900px) {
+        gap: 0;
+        border-radius: .5rem;
+    }
+}
+
+@media (min-width: 900px) {
+    .bs-pdp--media-container {
+        display: grid;
+        column-gap: 2rem;
+        grid-template-columns: 20% 80%;
+    }
+}
+
+.navigation-wrapper {
+    position: relative;
+}
+
+.dots {
+    display: flex;
+    padding: 10px 0;
+    justify-content: center;
+
+    @media (min-width: 900px) {
+        display: none;
+    }
+}
+
+.dot {
+    display: block !important;
+    border: none;
+    width: 1rem;
+    height: 1rem;
+    background: var(--bc-ncolor-light);
+    border-radius: 50%;
+    margin: 0 5px;
+    padding: 5px;
+    cursor: pointer;
+
+    &:focus {
+        outline: none;
+    }
+
+    &.dot--active {
+        box-shadow: var(--box-shadow-light-inset);
+    }
+}
+
+.navigation-wrapper {
+    padding-bottom: 3.8rem;
+}
+
+.arrow {
+    display: none;
+
+    @media (min-width: 900px) {
+        display: block !important;
+        width: 2.3rem;
+        height: 2.3rem;
+        position: absolute;
+        bottom: .5rem;
+        cursor: pointer;
+        background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNNy4zMyAyNGwtMi44My0yLjgyOSA5LjMzOS05LjE3NS05LjMzOS05LjE2NyAyLjgzLTIuODI5IDEyLjE3IDExLjk5NnoiLz48L3N2Zz4=") no-repeat center center / 1.2rem;
+    }
+
+    &.arrow--disabled {
+        opacity: .3;
+    }
+}
+
+.arrow--left {
+    left: calc( 50% - 2.3rem );
+    transform: rotate(180deg);
+}
+
+.arrow--right {
+    right: calc( 50% - 2.3rem );
+}

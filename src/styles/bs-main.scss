@@ -1,0 +1,79 @@
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat variable";
+  font-style: normal;
+  font-weight: 400 500 600;
+  src: url("./Montserrat-VF.woff2") format("woff2");
+}
+
+:root {
+    --bs-ncolor-dark-1: #000;
+    --bs-ncolor-dark-2: #383838;
+    --bs-ncolor-mid: #D5D5D5;
+    --bc-ncolor-light: #F8F8F8;
+    --bs-color-success: #25A525;
+    --bs-color-sale: #1F47FF;
+
+    --box-shadow-lg: 0px 3px 20px #00000029;
+    --box-shadow-light-inset: inset 0px 3px 6px #00000029;
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    font-family: "Montserrat variable", sans-serif;
+}
+
+h1 {
+    color: var(--bs-ncolor-dark-1);
+    font-size: 2.2rem;
+    font-weight: 600;
+    font-family: "Montserrat variable", sans-serif;
+
+    @media (min-width: 700px) {
+        font-size: 2.5rem;
+    }
+}
+
+strong {
+    font-weight: 600;
+}
+
+.button, .shopify-challenge__button, .customer button {
+    font-weight: 600;
+}
+
+.neoric .price {
+    font-weight: 600;
+    display: flex;
+    line-height: 1;
+    align-items: flex-end;
+
+    .price-item--sale {
+        color: rgb( var(--color-button) );
+    }
+
+    &.price--on-sale .price-item--regular {
+        font-size: 1.6rem;
+    }
+
+    .price--vat-info {
+        font-size: 1rem;
+        margin-left: .6rem;
+    }
+}
+
+#MainContent .page-width {
+    max-width: calc( var(--page-width) / 3 * 2 );
+}
+
+@media (max-width: 699px) {
+    .neoric .page-width {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
