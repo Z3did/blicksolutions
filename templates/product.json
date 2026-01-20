@@ -11,79 +11,51 @@
   "sections": {
     "main": {
       "type": "bs-main-product",
+      "settings": {
+        "color_scheme": "scheme-1"
+      }
+    },
+    "benefits": {
+      "type": "bs-benefits",
       "blocks": {
-        "vendor": {
-          "type": "text",
+        "benefit_bdcAp9": {
+          "type": "benefit",
           "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
+            "icon": "shopify://shop_images/iconmonstr-award-14.svg",
+            "title": "100% Qualität",
+            "copy": "Dank weichem Silikon"
           }
         },
-        "title": {
-          "type": "title",
-          "settings": {}
-        },
-        "price": {
-          "type": "price",
-          "settings": {}
-        },
-        "variant_picker": {
-          "type": "variant_picker",
+        "benefit_GrHgkD": {
+          "type": "benefit",
           "settings": {
-            "picker_type": "button",
-            "swatch_shape": "circle"
+            "icon": "shopify://shop_images/iconmonstr-award-14.svg",
+            "title": "100% Qualität",
+            "copy": "Dank weichem Silikon"
           }
         },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "settings": {}
-        },
-        "buy_buttons": {
-          "type": "buy_buttons",
+        "benefit_tzRBGa": {
+          "type": "benefit",
           "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
-          }
-        },
-        "description": {
-          "type": "description",
-          "settings": {}
-        },
-        "share": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
+            "icon": "shopify://shop_images/iconmonstr-award-14.svg",
+            "title": "100% Qualität",
+            "copy": "Dank weichem Silikon"
           }
         }
       },
       "block_order": [
-        "vendor",
-        "title",
-        "price",
-        "variant_picker",
-        "quantity_selector",
-        "buy_buttons",
-        "description",
-        "share"
+        "benefit_bdcAp9",
+        "benefit_GrHgkD",
+        "benefit_tzRBGa"
       ],
       "settings": {
-        "enable_sticky_info": true,
-        "color_scheme": "scheme-1",
-        "media_size": "large",
-        "constrain_to_viewport": true,
-        "media_fit": "contain",
-        "gallery_layout": "stacked",
-        "mobile_thumbnails": "hide",
-        "media_position": "left",
-        "image_zoom": "lightbox",
-        "hide_variants": true,
-        "enable_video_looping": false,
         "padding_top": 36,
-        "padding_bottom": 12
+        "padding_bottom": 36
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "benefits"
   ]
 }

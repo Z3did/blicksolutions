@@ -127,7 +127,8 @@
         "from_price_html": "Von {{ price }}",
         "regular_price": "Normaler Preis",
         "sale_price": "Verkaufspreis",
-        "unit_price": "Grundpreis"
+        "unit_price": "Grundpreis",
+        "incl_vat": "inkl. MwSt."
       },
       "share": "Dieses Produkt teilen",
       "sold_out": "Ausverkauft",
@@ -179,7 +180,8 @@
       "product_variants": "Produktvarianten",
       "taxes_included": "Inkl. Steuern.",
       "duties_included": "Inkl. Zollgebühren.",
-      "duties_and_taxes_included": "Inkl. Zollgebühren und Steuern."
+      "duties_and_taxes_included": "Inkl. Zollgebühren und Steuern.",
+      "arrives": "bei dir"
     },
     "modal": {
       "label": "Medien-Galerie"

@@ -1,0 +1,52 @@
+.bs-benefits--item {
+    display: flex;
+    column-gap: 2.5rem;
+
+    img {
+        display: block;
+        width: 4.8rem;
+        height: 4.8rem;
+        object-fit: contain;
+    }
+
+    @media (max-width: 699px) {
+        padding-left: 3.6rem;
+        padding-right: 3.6rem;
+    }
+
+    @media (min-width: 700px) {
+        column-gap: 2rem;
+        flex: 0 0 33.3334%;
+
+        img {
+            width: 5.7rem;
+            height: 5.7rem;
+        }
+    }
+}
+
+.bs-benefits--copy {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+
+    > div {
+        color: var(--bs-ncolor-dark-2);
+    }
+
+    @media (min-width: 900px) {
+        font-size: 1.8rem;
+    }
+}
+
+.bs-benefits--container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.9rem;
+
+    @media (min-width: 900px) {
+        flex-direction: row;
+        gap: 0;
+        justify-content: space-between;
+    }
+}
